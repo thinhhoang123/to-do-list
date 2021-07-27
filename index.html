@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <h2>To do list</h2>
+            <input type="text" name="" id="input">
+            <button onclick="newElement()"> <i class="fas fa-plus"></i></button>
+            <div class="action">
+                <a href="#" onclick="change(1)">All (<span id="all"></span>)</a>
+                <a href="#" onclick="change(2)">Completed</a>
+            </div>
+        </section>
+        <section class="body">
+            <div class="all">
+                <ul id="all"></ul>
+            </div>
+            <div class="completed" hidden>
+                <ul id="completed">
+                    <li>asjkdhasd</li>
+                    <li>asjkdhasd</li>
+                </ul>
+            </div>
+        </section>  
+    </div>
+</body>
+<script src="js.js" async></script>
+</html>
